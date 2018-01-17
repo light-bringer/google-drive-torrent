@@ -6,8 +6,8 @@ html
 
         link(href="https://fonts.googleapis.com/css?family=Source+Sans+Pro", rel="stylesheet")
         link(href="css/styles.css", rel="stylesheet")
-        link(script src="https://apis.google.com/js/platform.js")
-        link(meta name="google-signin-client_id" content="957500469118-lag7jbume0qe6dfb2csrm5sdgr6mdfcn.apps.googleusercontent.com")
+        script(src="https://apis.google.com/js/platform.js" async defer)
+        meta(name="google-signin-client_id" content="957500469118-lag7jbume0qe6dfb2csrm5sdgr6mdfcn.apps.googleusercontent.com")
 
                 
     body
@@ -18,7 +18,6 @@ html
             a.item.red Home
             .right.menu
                 a.item(href="/login")
-                    .ui.primary.button Log in
                     .g-signin2
 
 
