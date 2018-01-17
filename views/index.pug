@@ -6,6 +6,9 @@ html
 
         link(href="https://fonts.googleapis.com/css?family=Source+Sans+Pro", rel="stylesheet")
         link(href="css/styles.css", rel="stylesheet")
+        link(script src="https://apis.google.com/js/platform.js")
+        link(meta name="google-signin-client_id" content="957500469118-lag7jbume0qe6dfb2csrm5sdgr6mdfcn.apps.googleusercontent.com")
+
                 
     body
 
@@ -16,6 +19,8 @@ html
             .right.menu
                 a.item(href="/login")
                     .ui.primary.button Log in
+                    .g-signin2
+
 
         .ui.inverted.vertical.segment(style="padding-top: 40px; min-height: 100%; background-image: url('./img/galaxy.jpg'); background-size: cover")
             if error
